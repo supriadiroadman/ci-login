@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 13, 2019 at 05:23 AM
+-- Generation Time: Jul 13, 2019 at 08:56 AM
 -- Server version: 10.3.15-MariaDB
 -- PHP Version: 7.3.6
 
@@ -44,9 +44,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `name`, `email`, `image`, `password`, `role_id`, `is_active`, `date_created`) VALUES
-(1, 'Supriadi Roadman', 'supriadi@gmail.com', 'default.jpg', '$2y$10$RHSjfYLrDkYFC3MnFYrPRuchP2F0bv0FWA4ZrnHrzPtoi3PivDuZy', 2, 1, 1562986859),
-(2, 'adi', 'adi@gmail.com', 'default.jpg', '$2y$10$gnBFoxx5LD5VbSjASUxmnumSEdmDTrVi7GiXYE9ZqAAkYg/2/N3he', 2, 1, 1562987037),
-(3, 'Candra', 'candra@gmail.com', 'default.jpg', '$2y$10$1tvzvoE7tRCDGvlIzpfSr.E98FKI3hpX1hS6yaHrRYeCk4Uwh2ezO', 2, 1, 1562987223);
+(6, 'Supriadi Roadman', 'supriadiroadman@gmail.com', 'default.jpg', '$2y$10$A63APU3GslX6RLpa0wgtROtnFVfJiFHzwOos3sCdtGzr5vlWd0Rd.', 2, 1, 1562999739);
 
 -- --------------------------------------------------------
 
@@ -91,7 +89,7 @@ ALTER TABLE `user_role`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `user_role`
