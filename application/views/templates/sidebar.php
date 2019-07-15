@@ -25,7 +25,6 @@
    $menu = $this->db->query($queryMenu)->result_array();
    ?>
 
-
    <!-- Looping menu -->
    <?php foreach ($menu as $m) : ?>
       <div class="sidebar-heading">
@@ -46,7 +45,11 @@
       ?>
 
       <?php foreach ($subMenu as $sm) : ?>
-         <li class="nav-item">
+         <?php if ($title == $sm['title']) : ?>
+            <li class="nav-item active">
+            <?php else : ?>
+            <li class="nav-item">
+            <?php endif; ?>
             <a class="nav-link" href="<?php echo base_url($sm['url']); ?>">
                <i class="<?php echo $sm['icon']; ?>"></i>
                <span><?php echo $sm['title']; ?></span></a>
