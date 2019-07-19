@@ -1,0 +1,6 @@
+MySQL Database
+Username : supriad2_adi
+Database : supriad2_login_db
+Password : ?abcd11223344556677889900?
+
+
